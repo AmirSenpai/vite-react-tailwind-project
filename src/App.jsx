@@ -1,11 +1,14 @@
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Header from "./components/header.jsx";
+import Body from "./components/body.jsx";
+import Footer from "./components/footer.jsx";
 
 function App() {
   return (
     <>
-      <div>
-        <h1>body</h1>
-      </div>
+    <Header/>
+    <Body />
+    <Footer />
     </>
   );
 }
