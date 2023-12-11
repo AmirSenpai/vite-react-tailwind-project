@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  .btn-blue {
+    @apply text-sm bg-emerald-500 hover:bg-emerald-700 duration-300 text-white font-bold py-1 px-3 rounded md:text-lg md:shrink-0;
+  }
+}

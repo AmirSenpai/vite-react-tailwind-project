@@ -1,18 +1,19 @@
 import React from "react";
-// import Maintest from "./data/Maintest";
+import Maintest from "/src/data/Maintest";
+import Bodydata from "./bodydata";
 
 function Body() {
   return (
     <>
-      <div className="h-screen bg-stone-800">
-        {/* {Maintest.map(item => (
-          <App
+      <div className="h-screen bg-gray-800">
+        {Maintest.map((item) => (
+          <Bodydata
           year={item.year}
           title={item.title}
           name={item.name}
+          link={item.link}
           />
-        ))} */}
-       {/* <h3 className="text-white font-mono">{year}</h3>  */}
+        ))}
       </div>
     </>
   );

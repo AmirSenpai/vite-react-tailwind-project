@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Header from "./components/header.jsx";
-import Body from "./components/body.jsx";
-import Footer from "./components/footer.jsx";
+import Header from "./components/header";
+import Body from "./components/body";
+import Footer from "./components/footer";
 
 function App() {
   return (
