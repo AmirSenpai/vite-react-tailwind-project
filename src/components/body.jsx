@@ -1,19 +1,23 @@
 import React from "react";
 import Maintest from "/src/data/Maintest";
-import Bodydata from "./bodydata";
+import Introbody from "./introbody";
+import Main from "./mainbody";
 
 function Body() {
   return (
     <>
-      <div className="h-screen bg-gray-800">
+      <div className="h-screen2 bg-gray-800">
         {Maintest.map((item) => (
-          <Bodydata
-          year={item.year}
-          title={item.title}
-          name={item.name}
-          link={item.link}
+          <Introbody
+            year={item.year}
+            title={item.title}
+            name={item.name}
+            link={item.link}
+            web={item.web}
           />
         ))}
+        <hr className="bg-rose-800 border-0 h-1 my-2" />
+        <Main />
       </div>
     </>
   );

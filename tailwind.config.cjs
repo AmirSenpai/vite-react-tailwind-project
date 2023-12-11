@@ -9,6 +9,9 @@ export default {
         tahoma: ["tahoma"],
         vazir: ["vazir"],
       },
+      height: {
+        screen2: ["120vh"],
+      },
     },
   },
   plugins: [],
