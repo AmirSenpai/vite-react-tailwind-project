@@ -14,6 +14,7 @@ function Body() {
             title={item.title}
             link={item.link}
             imgsrc={item.imgsrc}
+            a_tag={item.a_tag}
           />
         ))}
       </div>
