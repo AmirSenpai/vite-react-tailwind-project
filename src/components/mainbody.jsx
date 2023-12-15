@@ -1,15 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Main() {
-  function clickon() {
-  let i = 0;
-  i++;
-  const like = document.getElementById("button").innerHTML = "❤  " + i;
-  alert("Thank You :)");
-  if (i > 0){
-    document.getElementById("button").disabled = true;
-  }
-  }
+  const [count, setCount] = useState(0);
   return (
     <>
       <div className="flex items-center justify-center flex-row">
@@ -17,7 +9,13 @@ function Main() {
           My Top 5 <span className="underline text-amber-400">Best</span>{" "}
           Projects
         </h2>
-        <button className="btn-blue ml-4 font-normal bg-red-600 hover:bg-red-800 p-1" onClick={clickon} id="button">❤ 0</button>
+        <button
+          className="btn-blue ml-4 font-normal bg-red-600 hover:bg-red-800 p-1"
+          onClick={() => setCount(count + 1)}
+          id="button"
+        >
+          ❤ {count}
+        </button>
       </div>
     </>
   );
