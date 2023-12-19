@@ -17,7 +17,7 @@ function Main() {
         >
           ❤ {count}
         </button>
-        <About/>
+        <About />
       </div>
     </>
   );
