@@ -5,7 +5,7 @@ import Main from "./mainbody";
 function Body() {
   useEffect(() => {
     // Check if IDs are already in localStorage
-    const storedIds = localStorage.getItem('propertyIds');
+    const storedIds = localStorage.getItem("propertyIds");
     if (!storedIds) {
       // Generate unique IDs for each property of each item
       const generatedIds = Maintest.reduce((acc, item, index) => {
@@ -17,18 +17,24 @@ function Body() {
         return acc;
       }, {});
 
-      localStorage.setItem('propertyIds', JSON.stringify(generatedIds));
+      localStorage.setItem("propertyIds", JSON.stringify(generatedIds));
     }
   }, []);
-  
 
   return (
     <>
       <div className="h-full">
         <Main />
         {Maintest.map((item, index) => (
-          <div key={index} id={`item-${index}`} className="flex flex-col gap-5 items-center justify-center">
-            <h2 id={`title-${index}`} className="md:text-xl font-semibold -mb-2 mt-4 border-2 border-black bg-white p-1 rounded-lg md:w-56 w-40 text-center">
+          <div
+            key={index}
+            id={`item-${index}`}
+            className="flex flex-col gap-5 items-center justify-center"
+          >
+            <h2
+              id={`title-${index}`}
+              className="md:text-xl font-semibold -mb-2 mt-4 border-2 border-black bg-white p-1 rounded-lg md:w-56 w-40 text-center"
+            >
               {item.title}
             </h2>
             <img
@@ -37,11 +43,17 @@ function Body() {
               alt={item.title}
               className="w-80 md:w-96 object-cover rounded-lg border-yellow-200 border blur-sm hover:filter-none transition delay-150"
             />
-            <h2 id={`year-${index}`} className="-m-2 bg-white p-1 w-28 rounded-xl font-bold text-center">
+            <h2
+              id={`year-${index}`}
+              className="-m-2 bg-white p-1 w-28 rounded-xl font-bold text-center"
+            >
               {item.year}
             </h2>
             {item.link ? (
-              <h2 id={`link-h2-${index}`} className="flex items-center justify-center flex-col md:flex-row">
+              <h2
+                id={`link-h2-${index}`}
+                className="flex items-center justify-center flex-col md:flex-row"
+              >
                 <a
                   href={item.link}
                   target="_blank"
@@ -60,9 +72,12 @@ function Body() {
                 </a>
               </h2>
             ) : (
-              <h2 id={`link-h2-${index}`} className="flex items-center justify-center flex-col md:flex-row">
+              <h2
+                id={`link-h2-${index}`}
+                className="flex items-center justify-center flex-col md:flex-row"
+              >
                 <a
-                id={`link-empty-${index}`}
+                  id={`link-empty-${index}`}
                   className="btn-blue bg-emerald-900 font-medium text-lg md:text-xl"
                   // onClick={test}
                 >

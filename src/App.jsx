@@ -6,10 +6,10 @@ import Footer from "./components/footer";
 function App() {
   return (
     <>
-    <div className="bg-gray-900">
-      <Header />
-      <Body />
-      <Footer />
+      <div className="bg-gray-900">
+        <Header />
+        <Body />
+        <Footer />
       </div>
     </>
   );

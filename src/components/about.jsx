@@ -1,10 +1,16 @@
-import React from 'react'
+import React from "react";
 
-function About(){
-    return (
-      <div className='flex flex-wrap text-center mb-5 mt-4 border rounded p-2 w-3/4'>
-        <p className="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet nam ad aperiam architecto, repellendus adipisci ex odit, corporis tempore voluptate, id ut delectus! Inventore explicabo quas perspiciatis molestiae nobis voluptatum consequuntur, culpa totam omnis eos beatae vero voluptatem repellendus distinctio hic vitae ipsa tempore sit nemo voluptatibus fuga odio velit?</p>
-      </div>
-    )
+function About() {
+  return (
+    <div className="flex flex-wrap items-center justify-center mb-5 mt-4 border rounded p-2 w-3/4 md:w-2/4">
+      <p className="text-yellow-400 text-center">
+        Hello! I'm AmirHossein. I'm a Junior(slightly senior) web developer.
+        <br />
+        <a className="text-yellow-600" href="https://github.com/AmirSenpai"> Here's my gitHub Page</a>
+        <br />
+        i hope you like this little portfolio project i made with react - vite and tailwind 🤍
+      </p>
+    </div>
+  );
 }
 export default About;
