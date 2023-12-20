@@ -10,7 +10,7 @@ export default {
         vazir: ["vazir"],
       },
       height: {
-        screen2: ["210vh"],
+        screen2: ["225vh"],
       },
     },
   },
