@@ -1,8 +1,34 @@
-# React + Vite
+# Vite, React & Tailwind Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### how to run?
 
-Currently, two official plugins are available:
+1 - open this repo in your local device via this command:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bs
+git clone https://github.com/AmirSenpai/vite-react-tailwind-project.git
+```
+
+2 - open cmd or any type of terminal you want _i suggest Vscode's terminal_ and cd to the root directory
+
+3 - type this command to install the npm package's on your device
+
+```bs
+npm install -g .
+```
+
+then type :
+
+```bs
+npm run dev
+```
+
+if done correctly you will get a link to the preview of this project in your terminal.
+Enjoy!
+
+[AmirSenpai](https://github.com/AmirSenpai)
+
+[Contact me via Gmail](itsdekusenpai@gmail.com)
+
+<hr>
+
+[Back To Top 🔼](#top)

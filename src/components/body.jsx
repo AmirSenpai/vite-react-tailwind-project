@@ -49,6 +49,12 @@ function Body() {
             >
               {item.year}
             </h2>
+            <p
+            id={`description-${index}`}
+            className="text-black font-semibold w-2/3 md:w-fit px-2 py-3 text-base md:text-lg text-center bg-slate-400 rounded-md"
+            >
+              ▄▌ {item.description} ▐▄
+            </p>
             {item.link ? (
               <h2
                 id={`link-h2-${index}`}

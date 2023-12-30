@@ -12,6 +12,14 @@ export default {
       height: {
         screen2: ["225vh"],
       },
+      width: {
+        100: ["600px"],
+      },
+      textColor: {
+        gmail: "#c71610",
+        discord: "#7785cc",
+        github:" #24292e"
+      },
     },
   },
   plugins: [],
